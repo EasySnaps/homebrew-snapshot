@@ -1,6 +1,6 @@
 cask "easysnaps" do
   version "1.4.1"
-  sha256 "1a55648df7307455abaf2f5ea01d3e174095757219f1b244304f03090695a734"
+  sha256 :no_check
 
   url "https://easysnaps.org/downloads/EasySnaps.dmg"
   name "EasySnaps"
@@ -9,7 +9,7 @@ cask "easysnaps" do
 
   livecheck do
     url "https://easysnaps.org/appcast/screenshot.xml"
-    strategy :sparkle
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
