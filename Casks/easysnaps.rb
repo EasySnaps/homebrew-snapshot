@@ -1,5 +1,5 @@
 cask "easysnaps" do
-  version "1.9.2"
+  version "1.10.2"
   sha256 :no_check
 
   url "https://easysnaps.org/downloads/EasySnaps.dmg"
