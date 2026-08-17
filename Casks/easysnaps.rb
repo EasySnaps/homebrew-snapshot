@@ -1,8 +1,8 @@
 cask "easysnaps" do
-  version "1.14.3"
-  sha256 :no_check
+  version "1.21.0"
+  sha256 "d2a3f4a9ed0700212ba78e7d459166b3a7f962dec3d7474646443fe0115749cd"
 
-  url "https://easysnaps.org/downloads/EasySnaps.dmg"
+  url "https://easysnaps.org/downloads/EasySnaps-#{version}.dmg"
   name "EasySnaps"
   desc "Screen capture and screenshot editor for macOS"
   homepage "https://easysnaps.org"
@@ -18,9 +18,10 @@ cask "easysnaps" do
   app "EasySnaps.app"
 
   zap trash: [
-    "~/Library/Application Support/com.easysnaps.screenshot",
-    "~/Library/Preferences/com.easysnaps.screenshot.plist",
-    "~/Library/Caches/com.easysnaps.screenshot",
-    "~/Library/Saved Application State/com.easysnaps.screenshot.savedState",
+    "~/Library/Application Support/EasySnaps",
+    "~/Library/Preferences/snapdeck.plist",
+    "~/Library/Caches/snapdeck",
+    "~/Library/HTTPStorages/snapdeck",
+    "~/Library/Saved Application State/snapdeck.savedState",
   ]
 end
