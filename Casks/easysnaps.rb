@@ -1,6 +1,6 @@
 cask "easysnaps" do
-  version "1.24.0"
-  sha256 "f8d1648a5bc55257e42eb56ae9bdd5d565e53273fe067c538131c87f94044ff4"
+  version "1.25.0"
+  sha256 "b7529142be9336b83822152ed92ec1fb1f286e73990a3629c94138fb1420d0bd"
 
   url "https://easysnaps.org/downloads/EasySnaps-#{version}.dmg"
   name "EasySnaps"
